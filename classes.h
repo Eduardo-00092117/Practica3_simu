@@ -85,7 +85,7 @@ class mesh{
         condition *neumann_list;
     public:
         void setParameters(float e,float a, float f){
-            parameters[THERMAL_CONDUCTIVITY]=(a*e)/2;
+            parameters[THERMAL_CONDUCTIVITY]=(a*e);
             parameters[HEAT_SOURCE]=f;
         }
         void setSizes(int nnodes,int neltos,int ndirich,int nneu){
